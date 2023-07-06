@@ -1,0 +1,58 @@
+{
+  "seller": [
+    {
+      "name": "gaurab",
+      "email": "hello@we.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "email": "test@test.com",
+      "password": "test123",
+      "id": 7
+    },
+    {
+      "name": "rame",
+      "email": "ram@123",
+      "password": "rame123",
+      "id": 8
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 9
+    }
+  ]
+}
