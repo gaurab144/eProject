@@ -1,1 +1,30 @@
-<p>sales-home works!</p>
+<div class="product-list">
+    <h1>All Product list</h1>
+    <p>{{deleteMsg}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productList">
+                <td><img src="{{item.img}}" alt=""></td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.desc}}</td>
+                <td>
+                    <fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
+                    <a class="adjust-update-link" routerLink="/sales-update-product/{{item.id}}"><fa-icon [icon]="iconEdit"></fa-icon></a>
+                    <!-- here the "/sales-update-product/{{item.id}}" is used so,while populating the id in update component route.snapshot.paramap.get{id} is used -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

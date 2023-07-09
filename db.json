@@ -11,6 +11,50 @@
       "email": "luigi@gmail.com",
       "password": "luigi123",
       "id": 2
+    },
+    {
+      "name": "test",
+      "email": "test@test.com",
+      "password": "test123",
+      "id": 3
+    },
+    {
+      "name": "pedro",
+      "email": "pedro@gmail.com",
+      "password": "pedro123",
+      "id": 4
+    },
+    {
+      "name": "oggy",
+      "email": "oggy@gmail.com",
+      "password": "oggy123",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "samsung m14",
+      "price": "12000",
+      "category": "mobile",
+      "desc": "hello",
+      "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a50s.jpg",
+      "id": 1
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI_1hA76QPWjQJ0DGKaHU2QrfdKzxu4YLCISDnBXYE-GpO8lTf4pFu7SVziK0xiRUrfQ&usqp=CAU",
+      "id": 2
+    },
+    {
+      "name": "",
+      "price": "",
+      "category": "",
+      "desc": "",
+      "img": "https://i2-prod.mirror.co.uk/incoming/article29308835.ece/ALTERNATES/s615b/0_MAIN-Gervonta-Davis-v-Hector-Luis-Garcia.jpg",
+      "id": 3
     }
   ]
 }

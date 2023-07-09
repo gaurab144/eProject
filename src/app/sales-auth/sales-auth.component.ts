@@ -41,9 +41,10 @@ export class SalesAuthComponent {
     this._seller.$isLoginError.subscribe((error) => {
        if(error) {
         this.isError = 'Email or password is invalid'
+       }else{
+        this._seller.reloadSeller()
        }
     })
-    this._seller.reloadSeller()
   }
 
   // toggle for signup and login

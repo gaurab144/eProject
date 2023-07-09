@@ -19,8 +19,8 @@ export class NavbarComponent {
       if(val.url){
         // console.warn(val.url)
         // for changing the navbar according to seller-user and home [menuType value checks if the navbar for seller and default]
-        if(localStorage.getItem('seller') && val.url.includes('sales-home')){
-          console.warn('inside seller area')
+        if(localStorage.getItem('seller') && val.url.includes('sales')){
+          // console.warn('inside seller area')
           this.menuType='seller'
           if(localStorage.getItem('seller')){
             let store= localStorage.getItem('seller') // here the localstorage value is store in Json string formate
@@ -28,7 +28,7 @@ export class NavbarComponent {
             this.sellerName = sData.name 
           }
         }else{
-          console.warn('outside seller area')
+          // console.warn('outside seller area')
           this.menuType='default'
         }
       }
