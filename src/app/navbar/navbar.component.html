@@ -1,9 +1,16 @@
 <nav class="nav">
     <h1><a routerLink="">eProject</a></h1>
 
-    <div *ngIf="menuType === 'seller'" class="nav-search">
-        <input type="text" placeholder="search for products">
-        <button>Search</button>
+    <div *ngIf="menuType === 'default'" class="nav-search">
+        <!-- to hide the search after pointer in click in free space (blur)="hideSearch() -->
+        <!-- # le id jsto behave garne banauxa ani tai # lagako value lai button click ma call gareko xa for search componet to open with searched-item -->
+        <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="search for products">
+        <button (click)="submitSearch(searchInput.value)">Search</button>
+        <ul class="suggested-result" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a>{{item.name}}</a>
+            </li>
+        </ul>
     </div>
     
     <div [ngSwitch]="menuType">

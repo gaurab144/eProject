@@ -31,4 +31,18 @@ export class ProductService {
     return this._http.put<products>(`http://localhost:3000/products/${product.id}`, product)
   }
 
+  // here _limit helps to pass the data according to limit
+  popularProducts(){
+    return this._http.get<products[]>('http://localhost:3000/products?_limit=3')
+  }
+
+  trendyProducts(){
+    return this._http.get<products[]>('http://localhost:3000/products?_limit=4')
+  }
+
+  // for search api `/...?q=${query}` is necessary
+  searchProducts(query: string) {
+    return this._http.get<products[]>(`http://localhost:3000/products?q=${query}`)
+  }
+
 }

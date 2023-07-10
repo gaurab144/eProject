@@ -13,6 +13,8 @@ import { SalesAddProductComponent } from './sales-add-product/sales-add-product.
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SalesUpdateProductsComponent } from './sales-update-products/sales-update-products.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SalesHomeComponent,
     SalesAddProductComponent,
     SalesUpdateProductsComponent,
+    SearchComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

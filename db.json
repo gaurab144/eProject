@@ -33,28 +33,44 @@
   ],
   "products": [
     {
-      "name": "samsung m14",
-      "price": "12000",
-      "category": "mobile",
-      "desc": "hello",
-      "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a50s.jpg",
-      "id": 1
-    },
-    {
       "name": "iphone",
       "price": "50000",
       "category": "mobile",
       "desc": "iphone is best",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI_1hA76QPWjQJ0DGKaHU2QrfdKzxu4YLCISDnBXYE-GpO8lTf4pFu7SVziK0xiRUrfQ&usqp=CAU",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
       "id": 2
     },
     {
-      "name": "",
-      "price": "",
-      "category": "",
-      "desc": "",
-      "img": "https://i2-prod.mirror.co.uk/incoming/article29308835.ece/ALTERNATES/s615b/0_MAIN-Gervonta-Davis-v-Hector-Luis-Garcia.jpg",
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
       "id": 3
+    },
+    {
+      "name": "Hummer",
+      "price": "3000000",
+      "category": "car",
+      "desc": "military vehicle",
+      "img": "https://i.pinimg.com/originals/7b/70/9b/7b709b87b90f87d763cf4236388b8b12.jpg",
+      "id": 4
+    },
+    {
+      "name": "final fantasy",
+      "price": "1800",
+      "category": "computer game",
+      "desc": "very addictive",
+      "img": "https://play-lh.googleusercontent.com/dKEyA80EAgdWxzGdeIWLePgM5etMyKE-JCKV3P3zwQ2BsjeWGIsIKZvPRd7W0Fbv-S4",
+      "id": 5
+    },
+    {
+      "name": "Dota 2",
+      "price": "120",
+      "category": "game",
+      "desc": "online game . addictive 200%",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7NUizuZn2WKx6ZMJYSQw1jBmeuER7kfiBtZyW3sL13QnMiOioTYtrPVLAav8q6SoTVg&usqp=CAU",
+      "id": 6
     }
   ]
 }

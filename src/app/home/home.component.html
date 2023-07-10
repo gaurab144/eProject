@@ -1,30 +1,33 @@
-<p>home works!</p>
-<ngb-carousel *ngIf="images">
-	<ng-template ngbSlide>
+<ngb-carousel class="carousel" *ngIf="popularProduct">
+	<!-- for looping the products inside our json server  -->
+	<ng-template *ngFor="let items of popularProduct" ngbSlide>
 		<div class="picsum-img-wrapper">
-			<img [src]="images[0]" alt="Random first slide" />
+			<img class="carousel-img" src ="{{items.img}}" alt="Random first slide" />
 		</div>
 		<div class="carousel-caption">
-			<h3>First slide label</h3>
-			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-		</div>
-	</ng-template>
-	<ng-template ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img [src]="images[1]" alt="Random second slide" />
-		</div>
-		<div class="carousel-caption">
-			<h3>Second slide label</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		</div>
-	</ng-template>
-	<ng-template ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img [src]="images[2]" alt="Random third slide" />
-		</div>
-		<div class="carousel-caption">
-			<h3>Third slide label</h3>
-			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			<h3>{{items.name}}</h3>
+			<p>{{items.desc}}</p>
 		</div>
 	</ng-template>
 </ngb-carousel>
+
+<div class="product-list-wrapper">
+	<h1>Trendy Products</h1>
+	<div class="row">
+		<div *ngFor="let i of trendyProducts" class="col-sm-3">
+			<div class="product-item">
+				<img src="{{i.img}}">
+			</div>
+			<div class="product-details">
+				<h6 class="name-head">{{i.name}}</h6>
+				<div class="product-price">
+					<h6>Price: {{i.price}}</h6>
+				</div>
+			</div>
+			<div class="product-footer">
+				<a href="">view details</a>
+				<a href="">add to cart</a>
+			</div>
+		</div>
+	</div>
+</div>
