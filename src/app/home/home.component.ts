@@ -22,6 +22,7 @@ export class HomeComponent {
     })
 
     this._product.trendyProducts().subscribe((data) => {
+      // console.warn(data)
       this.trendyProducts = data
     })
   }

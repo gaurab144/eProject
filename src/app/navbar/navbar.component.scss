@@ -20,3 +20,66 @@
     cursor: pointer;
     color: darkgreen;
   }
+
+  .nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav h1{
+    color: #1A5D1A;
+    margin: 0;
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  h1 a{
+    color: #1A5D1A;
+    text-decoration: none;
+  }
+  
+   ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li{
+    padding-left: 15px;
+    padding-top: 15px;
+    color: var(--blackColor);
+    font: {
+      weight: 555;
+      family: var(--headingFontFamily);
+    }
+  }
+  
+   li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-search{
+    margin-top: 5px;
+    flex: 1;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .nav-search input{
+    flex: 1;
+    color: black;
+    border: 1px solid black;
+    height: 39px;
+    border-right: 0px;
+  }
+  
+  .nav-search button{
+    color: black;
+    border: 1px solid black;
+    height: 39px;
+    border-left: 0px;
+  }

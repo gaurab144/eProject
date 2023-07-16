@@ -15,6 +15,10 @@ import { SalesUpdateProductsComponent } from './sales-update-products/sales-upda
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { FooterComponent } from './footer/footer.component';
     SalesUpdateProductsComponent,
     SearchComponent,
     FooterComponent,
+    ProductDetailsComponent,
+    UserAuthComponent,
+    CartPageComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

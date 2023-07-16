@@ -24,7 +24,7 @@ export class SellerService {
       this.$isSellerSignedIn.next(true) //this next(true) pass the boolean ture for the canActivate and the following route is done
       localStorage.setItem('seller', JSON.stringify(result.body)) //JSON.stringify converts the JavaScript object or value to JSON string
       this.router.navigate(['sales'])
-      console.warn('result', result)
+      // console.warn('result', result)
     })
   }
 

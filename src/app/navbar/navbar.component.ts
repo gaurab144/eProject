@@ -16,6 +16,10 @@ export class NavbarComponent {
 
   sellerName: string =''
 
+  userName: string ='' 
+
+  cartItems= 0;
+
   //for showing the search result
   searchResult: undefined | products[]
 
@@ -32,17 +36,40 @@ export class NavbarComponent {
             let sData= store && JSON.parse(store)[0]
             this.sellerName = sData.name 
           }
+        }else if(localStorage.getItem('user')){
+          let userStore = localStorage.getItem('user')
+          let userData = userStore && JSON.parse(userStore)
+          this.userName =userData.name
+          this.menuType= 'user'
+          this._product.getCartList(userData.id)
+
         }else{
           // console.warn('outside seller area')
           this.menuType='default'
         }
       }
     })
+
+    // cartData is storing the data from local storage to show in cartItems which is displayed in html
+    let cartData = localStorage.getItem('localCart')
+    if(cartData){
+      this.cartItems= JSON.parse(cartData).length
+    }
+    // here res is the items that are added in the local storage and the cartItems is used to hold the length of items
+    this._product.cartData.subscribe((res) => {
+      this.cartItems = res.length
+    })
   }
 
   logout() {
     localStorage.removeItem('seller');
     this.route.navigate([''])
+  }
+
+  userLogout(){
+    localStorage.removeItem('user')
+    this.route.navigate([''])
+    this._product.cartData.emit([])
   }
 
   // query is used here for auto search , method for search
@@ -69,6 +96,11 @@ export class NavbarComponent {
   submitSearch(val: string) {
     console.warn(val)
     this.route.navigate([`search/${val}`])
+  }
+
+  redirectoDetails(id: number){
+    this.route.navigate(['/details/'+id])
+
   }
 
 }

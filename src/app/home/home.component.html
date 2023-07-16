@@ -2,7 +2,9 @@
 	<!-- for looping the products inside our json server  -->
 	<ng-template *ngFor="let items of popularProduct" ngbSlide>
 		<div class="picsum-img-wrapper">
-			<img class="carousel-img" src ="{{items.img}}" alt="Random first slide" />
+			<a routerLink="/details/{{items.id}}">				
+				<img class="carousel-img" src ="{{items.img}}" alt="Random first slide" />
+			</a>
 		</div>
 		<div class="carousel-caption">
 			<h3>{{items.name}}</h3>
@@ -14,18 +16,18 @@
 <div class="product-list-wrapper">
 	<h1>Trendy Products</h1>
 	<div class="row">
-		<div *ngFor="let i of trendyProducts" class="col-sm-3">
+		<div *ngFor="let items of trendyProducts" class="col-sm-3">
 			<div class="product-item">
-				<img src="{{i.img}}">
+				<img src="{{items.img}}">
 			</div>
 			<div class="product-details">
-				<h6 class="name-head">{{i.name}}</h6>
+				<h6 class="name-head">{{items.name}}</h6>
 				<div class="product-price">
-					<h6>Price: {{i.price}}</h6>
+					<h6>Price: {{items.price}}</h6>
 				</div>
 			</div>
 			<div class="product-footer">
-				<a href="">view details</a>
+				<a routerLink="/details/{{items.id}}">view details</a>
 				<a href="">add to cart</a>
 			</div>
 		</div>

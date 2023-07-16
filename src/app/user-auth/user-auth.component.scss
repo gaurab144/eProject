@@ -1,0 +1,50 @@
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+    color: gray;
+}
+
+.common-form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+}
+
+.user-auth{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #080202;
+}
+
+.form-button{
+    height: 35px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.toggle-link{
+    margin-top: 20px;
+    color:#2596be ;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top:-20px
+  }
+
+  button:disabled{
+    cursor: not-allowed;
+  }
+
+  .error-p{
+    color: red;
+  }

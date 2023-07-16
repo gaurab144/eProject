@@ -1,4 +1,54 @@
 {
+  "users": [
+    {
+      "name": "gaurab",
+      "email": "144lazy@gmail.com",
+      "password": "subba",
+      "id": 1
+    },
+    {
+      "name": "gaurab",
+      "email": "gaurab@user.com",
+      "password": "gaurab",
+      "id": 2
+    },
+    {
+      "name": "peter ",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "gaurab",
+      "email": "gaurab.s@gmail.com",
+      "password": "gaurab",
+      "id": 5
+    },
+    {
+      "name": "admin",
+      "email": "admin144@gmail.com",
+      "password": "admin144",
+      "id": 6
+    },
+    {
+      "name": "Legion",
+      "email": "legion12",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 8
+    }
+  ],
   "seller": [
     {
       "name": "gaurab",
@@ -63,14 +113,129 @@
       "desc": "very addictive",
       "img": "https://play-lh.googleusercontent.com/dKEyA80EAgdWxzGdeIWLePgM5etMyKE-JCKV3P3zwQ2BsjeWGIsIKZvPRd7W0Fbv-S4",
       "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "userId": 5,
+      "productId": 2,
+      "id": 3
     },
     {
-      "name": "Dota 2",
-      "price": "120",
-      "category": "game",
-      "desc": "online game . addictive 200%",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7NUizuZn2WKx6ZMJYSQw1jBmeuER7kfiBtZyW3sL13QnMiOioTYtrPVLAav8q6SoTVg&usqp=CAU",
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      "quantity": 1,
+      "userId": 5,
+      "productId": 3,
+      "id": 4
+    },
+    {
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
       "id": 6
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 7
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 8
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 10
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "name": "iphone",
+      "price": "50000",
+      "category": "mobile",
+      "desc": "iphone is best",
+      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 5,
+      "id": 13
     }
   ]
 }
