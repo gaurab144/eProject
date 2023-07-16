@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../shared/product.service';
 import { cart, products } from '../data-type';
 
@@ -19,7 +19,7 @@ export class ProductDetailsComponent {
   productQuantity: number = 1
 
   // this activeRoute is instance of activated route
-  constructor(private activeRoute: ActivatedRoute, private _product: ProductService) { }
+  constructor(private activeRoute: ActivatedRoute, private _product: ProductService, private route: Router) { }
 
   ngOnInit() {
     // user is not logged in here
@@ -92,6 +92,8 @@ export class ProductDetailsComponent {
             this.removeCart = true
           }
         })
+
+        this.route.navigate(['cart-page'])
       }
 
     }

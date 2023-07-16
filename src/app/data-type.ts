@@ -43,3 +43,12 @@ export interface priceSummary{
     delivary: number
     total: number
 }
+
+export interface order{
+    email: string,
+    address: string,
+    contact: string,
+    totalPrice: number,
+    userId: number | undefined,
+    id: number | undefined
+}

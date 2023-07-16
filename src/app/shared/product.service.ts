@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
-import { cart, products } from '../data-type';
+import { cart, order, products } from '../data-type';
 
 @Injectable({
   providedIn: 'root'
@@ -100,10 +100,32 @@ export class ProductService {
     return this._http.delete('http://localhost:3000/cart/'+cartId);
   }
 
+  // using local sotrage busause we are getting the api based on user so user id is needed
   currentCart(){
     let userStore = localStorage.getItem('user')
     let userData = userStore && JSON.parse(userStore)
     return this._http.get<cart[]>('http://localhost:3000/cart?userId=' + userData.id);
+  }
+
+  orderNow(data: order){
+    return this._http.post('http://localhost:3000/orders', data);
+  }
+
+  orderList() {
+    let userStore = localStorage.getItem('user');
+    let userData = userStore && JSON.parse(userStore);
+    return this._http.get<order[]>('http://localhost:3000/orders?userId=' + userData.id);
+  }
+
+  deleteCartItems(cartId: number) {
+    return this._http.delete('http://localhost:3000/cart/' + cartId).subscribe((result) => {
+      this.cartData.emit([]);
+    })
+  }
+
+  cancelOrder(orderId:number){
+    return this._http.delete('http://localhost:3000/orders/'+orderId)
+
   }
 
 }
