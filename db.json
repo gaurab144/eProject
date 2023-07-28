@@ -117,16 +117,25 @@
   ],
   "cart": [
     {
-      "name": "iphone",
-      "price": "50000",
-      "category": "mobile",
-      "desc": "iphone is best",
-      "img": "https://images.unsplash.com/photo-1544866092-1935c5ef2a8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80",
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
       "quantity": 1,
-      "productId": 2,
+      "productId": 3,
+      "userId": 5,
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "email": "144lazy@gmail.com",
+      "address": "dharan",
+      "contact": "960000",
+      "totalPrice": 1600,
       "userId": 5,
       "id": 1
     }
-  ],
-  "orders": []
+  ]
 }
