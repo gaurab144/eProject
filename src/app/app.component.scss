@@ -1,4 +1,13 @@
-// .container {
-//     margin-left: 5%;
-//     margin-right: 5%;
-// }
+
+// .back {
+//     background: #73c8a9; 
+//     background: -webkit-linear-gradient(to right, #73c8a9, #373b44);
+//     background: linear-gradient(to right, #73c8a9, #373b44);    
+// }  
+
+app-footer {
+    /* Set the footer to have a fixed position at the bottom of the viewport */
+    position: fixed;
+    bottom: 0;
+      text-align: center;
+  }

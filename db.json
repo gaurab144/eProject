@@ -126,6 +126,28 @@
       "productId": 3,
       "userId": 5,
       "id": 4
+    },
+    {
+      "name": "Rolex",
+      "price": "1500",
+      "category": "Watch",
+      "desc": "diamond watch",
+      "img": "https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "Hummer",
+      "price": "3000000",
+      "category": "car",
+      "desc": "military vehicle",
+      "img": "https://i.pinimg.com/originals/7b/70/9b/7b709b87b90f87d763cf4236388b8b12.jpg",
+      "quantity": 1,
+      "productId": 4,
+      "userId": 1,
+      "id": 6
     }
   ],
   "orders": [
@@ -136,6 +158,22 @@
       "totalPrice": 1600,
       "userId": 5,
       "id": 1
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 3100,
+      "userId": 5,
+      "id": 2
+    },
+    {
+      "email": "144lazy@gmail.com",
+      "address": "dharan",
+      "contact": "960000",
+      "totalPrice": 3000100,
+      "userId": 1,
+      "id": 3
     }
   ]
 }

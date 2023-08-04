@@ -1,82 +1,90 @@
-.suggested-result{
-    position: absolute;
-    top: 55px;
-    z-index: 10;
-    display: list-item !important;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    width: 490px;
-    border-radius: 10px;
-  }
+.suggested-result {
+  position: absolute;
+  top: 55px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 490px;
+  border-radius: 10px;
+}
 
-  .suggested-result li{
-    padding:5px;
-    // border: 1px solid #ddd;
-  }
-  .suggested-result li a{
-    cursor: pointer;
-    color: darkgreen;
-  }
+.suggested-result li {
+  padding: 5px;
+  // border: 1px solid #ddd;
+}
 
-  .nav{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
+.suggested-result li a {
+  cursor: pointer;
+  color: darkgreen;
+}
+
+.back1 {
+  background: #abbaab;
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+  background: linear-gradient(to right, #ffffff, #abbaab);
+}
+
+.nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav h1 {
+  color: #1A5D1A;
+  margin: 0;
+  font-size: 40px;
+  font-style: italic;
+}
+
+h1 a {
+  color: #1A5D1A;
+  text-decoration: none;
+}
+
+ul {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: var(--blackColor);
+
+  font: {
+    weight: 555;
+    family: var(--headingFontFamily);
   }
-  
-  .nav h1{
-    color: #1A5D1A;
-    margin: 0;
-    font-size: 40px;
-    font-style: italic;
-  }
-  
-  h1 a{
-    color: #1A5D1A;
-    text-decoration: none;
-  }
-  
-   ul{
-    display: inline-flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li{
-    padding-left: 15px;
-    padding-top: 15px;
-    color: var(--blackColor);
-    font: {
-      weight: 555;
-      family: var(--headingFontFamily);
-    }
-  }
-  
-   li a{
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-search{
-    margin-top: 5px;
-    flex: 1;
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .nav-search input{
-    flex: 1;
-    color: black;
-    border: 1px solid black;
-    height: 39px;
-    border-right: 0px;
-  }
-  
-  .nav-search button{
-    color: black;
-    border: 1px solid black;
-    height: 39px;
-    border-left: 0px;
-  }
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-search {
+  margin-top: 5px;
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nav-search input {
+  flex: 1;
+  color: black;
+  border: 1px solid black;
+  height: 39px;
+  border-right: 0px;
+}
+
+.nav-search button {
+  color: black;
+  border: 1px solid black;
+  height: 39px;
+  border-left: 0px;
+}

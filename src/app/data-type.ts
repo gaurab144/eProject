@@ -13,6 +13,7 @@ export interface login{
  
 //this interface is for products type
 export interface products{
+title: any
     name: string
     price: number
     category: string
@@ -51,4 +52,17 @@ export interface order{
     totalPrice: number,
     userId: number | undefined,
     id: number | undefined
+}
+
+export interface productsData{
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+    rating: {
+      rate: number;
+      count: number;
+    };
 }

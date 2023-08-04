@@ -1,144 +1,143 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
 
-:root {
-  --fontFamily: "Lato", sans-serif;
-  --headingFontFamily: "Lora", serif;
-  --primaryColor: #195a87;
-  --primaryColor2: #25283a;
-  --secondaryColor: #f3902e;
-  --paragraphColor: #696969;
-  --bgPrimaryColor: #eeefee;
-  --whiteColor: #ffffff;
-  --blackColor: #2f3045;
-  --redColor: #e74646;
-  --lightRedColor: #fa9884;
-  --transition: 0.5s;
-  --fontSize: 16px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--blackColor);
-  font: {
-    size: var(--fontSize);
-    family: var(--fontFamily);
-  }
-}
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--blackColor);
-  font: {
-    weight: 700;
-    family: var(--headingFontFamily);
-  }
-}
+// :root {
+//   --fontFamily: "Lato", sans-serif;
+//   --headingFontFamily: "Lora", serif;
+//   --primaryColor: #195a87;
+//   --primaryColor2: #25283a;
+//   --secondaryColor: #f3902e;
+//   --paragraphColor: #696969;
+//   --bgPrimaryColor: #eeefee;
+//   --whiteColor: #ffffff;
+//   --blackColor: #2f3045;
+//   --redColor: #e74646;
+//   --lightRedColor: #fa9884;
+//   --transition: 0.5s;
+//   --fontSize: 16px;
+// }
+// body {
+//   margin: 0;
+//   padding: 0;
+//   color: var(--blackColor);
+//   font: {
+//     size: var(--fontSize);
+//     family: var(--fontFamily);
+//   }
+// }
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5,
+// .h6,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: var(--blackColor);
+//   font: {
+//     weight: 700;
+//     family: var(--headingFontFamily);
+//   }
+// }
 
-// Default Btn
-.default-btn {
-  border: 1px solid var(--primaryColor);
-  box-shadow: unset;
-  text-align: center;
-  padding: 10px 25px;
-  border-radius: 5px;
-  display: inline-block;
-  color: var(--whiteColor);
-  transition: var(--transition);
-  background-color: var(--primaryColor);
-  cursor: pointer;
+// // Default Btn
+// .default-btn {
+//   border: 1px solid var(--primaryColor);
+//   box-shadow: unset;
+//   text-align: center;
+//   padding: 10px 25px;
+//   border-radius: 5px;
+//   display: inline-block;
+//   color: var(--whiteColor);
+//   transition: var(--transition);
+//   background-color: var(--primaryColor);
+//   cursor: pointer;
 
-  font: {
-    weight: 600;
-    size: var(--fontSize);
-  }
-  &:hover {
-    color: var(--primaryColor);
-    background-color: aliceblue;
-  }
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-}
+//   font: {
+//     weight: 600;
+//     size: var(--fontSize);
+//   }
+//   &:hover {
+//     color: var(--primaryColor);
+//     background-color: aliceblue;
+//   }
+//   &:disabled {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+//   }
+// }
 
-.default-btn-2 {
-  border: 1px solid var(--primaryColor);
-  box-shadow: unset;
-  text-align: center;
-  padding: 10px 25px;
-  border-radius: 5px;
-  display: inline-block;
-  color: black;
-  transition: var(--transition);
-  background-color: aliceblue;
-  opacity: 0.7;
-  cursor: pointer;
-  font: {
-    weight: 600;
-    size: var(--fontSize);
-  }
-  &:hover {
-    color: white;
-    background-color: var(--primaryColor);
-    opacity: 1;
-  }
-  &:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-}
+// .default-btn-2 {
+//   border: 1px solid var(--primaryColor);
+//   box-shadow: unset;
+//   text-align: center;
+//   padding: 10px 25px;
+//   border-radius: 5px;
+//   display: inline-block;
+//   color: black;
+//   transition: var(--transition);
+//   background-color: aliceblue;
+//   opacity: 0.7;
+//   cursor: pointer;
+//   font: {
+//     weight: 600;
+//     size: var(--fontSize);
+//   }
+//   &:hover {
+//     color: white;
+//     background-color: var(--primaryColor);
+//     opacity: 1;
+//   }
+//   &:disabled {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+//   }
+// }
 
-.delete-btn {
-  border: 1px solid var(--redColor);
-  box-shadow: unset;
-  text-align: center;
-  padding: 10px 25px;
-  border-radius: 5px;
-  display: inline-block;
-  color: var(--whiteColor);
-  transition: var(--transition);
-  background-color: var(--redColor);
-  cursor: pointer;
+// .delete-btn {
+//   border: 1px solid var(--redColor);
+//   box-shadow: unset;
+//   text-align: center;
+//   padding: 10px 25px;
+//   border-radius: 5px;
+//   display: inline-block;
+//   color: var(--whiteColor);
+//   transition: var(--transition);
+//   background-color: var(--redColor);
+//   cursor: pointer;
 
-  font: {
-    weight: 600;
-    size: var(--fontSize);
-  }
-  &:hover {
-    background-color: var(--lightRedColor);
-  }
-}
+//   font: {
+//     weight: 600;
+//     size: var(--fontSize);
+//   }
+//   &:hover {
+//     background-color: var(--lightRedColor);
+//   }
+// }
 
-// scrollBar manipulation
-// width
-::-webkit-scrollbar {
-  width: 10px;
-}
+// // scrollBar manipulation
+// // width
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--paragraphColor);
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: var(--paragraphColor);
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
 
 // html,
 // body {
@@ -153,6 +152,91 @@ h6 {
 // bootstrap icon
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-.max-width{
-  width: 100%;
+// @import '~@fortawesome/fontawesome-free/css/all.css';
+
+// .max-width{
+//   width: 100%;
+// }
+
+:root{
+  --lg-font: 'Kaisei Tokumin', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --pink: #e5345b;
+}
+
+body{
+  font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+  background-color: var(--pink)!important;
+}
+.btn:not(.nav-btns button){
+  background-color: #fff;
+  color: rgb(124, 124, 124);
+  padding: 10px 28px;
+  border-radius: 15px;
+  border: 1px solid rgb(67, 66, 66);
+}
+.btn:not(.nav-btns button):hover{
+  background-color: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+
+
+/* navbar */
+.navbar{
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+  width: 30px;
+}
+.navbar-brand span{
+  letter-spacing: 2px;
+  font-family: var(--lg-font);
+}
+.nav-link:hover{
+  color: var(--pink)!important;
+}
+.nav-item{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header{
+  background: url(../src/assets/images/banner-img.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+  font-size: 60px;
+  font-family: var(--lg-font);
+}
+.carousel-item .btn{
+  border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+  border-color: var(--pink)!important;
+}
+
+/* title */
+.title h2::before{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+} 
+
+/* media queries */
+@media(min-width: 992px){
+  .nav-item{
+      border-bottom: none;
+  }
 }

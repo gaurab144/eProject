@@ -39,38 +39,51 @@
     </div>
 </nav> -->
 
-<!-- bootstrap -->
-<div class="container">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<!-- navbar for old project -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+
+  <!-- Navbar content -->
+
+  <!-- bootstrap -->
+
   <div class="container-fluid">
     <h1>
       <a class="navbar-brand" routerLink="">eProject</a>
     </h1>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
       <!-- Search Bar -->
+
       <div *ngIf="menuType === 'default' || menuType ==='user'" class="container">
         <form class="d-flex me-auto" role="search">
-          <input class="form-control me-2" type="search" aria-label="Search" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="search for products">
-          <button class="btn btn-outline-success" style="color: black;" type="submit" (click)="submitSearch(searchInput.value)">Search</button>
+          <input class="form-control me-2" type="search" aria-label="Search" #searchInput
+            (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="search for products">
+          <button class="btn btn-outline-success" style="color: black;" type="submit"
+            (click)="submitSearch(searchInput.value)">Search</button>
           <ul class="suggested-result navbar-nav mb-2 mb-lg-0" *ngIf="searchResult">
             <li class="nav-item" *ngFor="let item of searchResult">
-                <a class="nav-link" (mousedown)="redirectoDetails(item.id)" >{{item.name}}</a>
+              <a class="nav-link" (mousedown)="redirectoDetails(item.id)">{{item.name}}</a>
             </li>
-        </ul>
-        </form>  
+          </ul>
+        </form>
       </div>
 
       <!-- Link bars -->
+
       <div class="container d-flex justify-content-end" [ngSwitch]="menuType">
 
         <!-- defult -->
+
         <ul class="navbar-nav mb-2 mb-lg-0" *ngSwitchCase="'default'">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink=""><i class="bi bi-house-door-fill me-2"></i>Home</a>
+            <a class="nav-link active" aria-current="page" routerLink=""><i
+                class="bi bi-house-door-fill me-2"></i>Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="sales"><i class="bi bi-shop me-2"></i>Sales</a>
@@ -79,11 +92,13 @@
             <a class="nav-link" routerLink="user-auth"><i class="bi bi-person-lines-fill me-2"></i>SignUp</a>
           </li>
         </ul>
-        
+
         <!-- user -->
+
         <ul class="navbar-nav mb-2 mb-lg-0" *ngSwitchCase="'user'">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink=""><i class="bi bi-house-door-fill me-2"></i>Home</a>
+            <a class="nav-link active" aria-current="page" routerLink=""><i
+                class="bi bi-house-door-fill me-2"></i>Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="sales"><i class="bi bi-shop me-2"></i>Sales</a>
@@ -92,20 +107,25 @@
             <a class="nav-link" (click)="userLogout()"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="cartItems>0?'cart-page':null"><i class="bi bi-cart-plus-fill me-2"></i>Cart({{cartItems}})</a>
+            <a class="nav-link" [routerLink]="cartItems>0?'cart-page':null"><i
+                class="bi bi-cart-plus-fill me-2"></i>Cart({{cartItems}})</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="user-auth"><i class="bi bi-person-square me-2"></i>{{userName | titlecase}}</a>
+            <a class="nav-link" routerLink="user-auth"><i class="bi bi-person-square me-2"></i>{{userName |
+              titlecase}}</a>
           </li>
         </ul>
 
         <!-- sales -->
+
         <ul class="navbar-nav mb-2 mb-lg-0" *ngSwitchCase="'seller'">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="sales-home"><i class="bi bi-list me-2"></i>List</a>
+            <a class="nav-link active" aria-current="page" routerLink="sales-home"><i
+                class="bi bi-list me-2"></i>List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="sales-add-product"><i class="bi bi-plus-square-fill me-2"></i>Add Product</a>
+            <a class="nav-link" routerLink="sales-add-product"><i class="bi bi-plus-square-fill me-2"></i>Add
+              Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" (click)="logout()"><i class="bi bi-box-arrow-right me-2"></i>Logout</a>
@@ -119,4 +139,43 @@
     </div>
   </div>
 </nav>
-</div>
+
+<!-- <p>new-navbar</p>
+
+<nav class = "navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+  <div class="container">
+      <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+          <img src = "../../assets/images/bag-icon.png" alt = "site icon">
+          <span class = "text-uppercase fw-lighter ms-2">eProject</span>
+      </a>
+
+      <div class = "order-lg-2 nav-btns">
+          <button type = "button" class = "btn position-relative">
+             <fa-icon [icon]="cart"></fa-icon>
+              <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+          </button>
+          <button type = "button" class = "btn position-relative">
+              <fa-icon [icon]="heart"></fa-icon>
+              <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+          </button>
+          <button type = "button" class = "btn position-relative">
+              <fa-icon [icon]="search"></fa-icon>
+          </button>
+      </div>
+
+      <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+          <span class = "navbar-toggler-icon"></span>
+      </button>
+
+      <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+          <ul class = "navbar-nav mx-auto text-center">
+              <li class = "nav-item px-2 py-2">
+                  <a class = "nav-link text-uppercase text-dark" href="">Home</a>
+              </li>
+              <li class = "nav-item px-2 py-2">
+                  <a class = "nav-link text-uppercase text-dark" href = "">specials</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav> -->

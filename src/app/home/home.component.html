@@ -1,5 +1,4 @@
 <ngb-carousel class="carousel" *ngIf="popularProduct">
-	<!-- for looping the products inside our json server  -->
 	<ng-template *ngFor="let items of popularProduct" ngbSlide>
 		<div class="picsum-img-wrapper">
 			<a routerLink="/details/{{items.id}}">				
@@ -32,3 +31,4 @@
 		</div>
 	</div>
 </div>
+

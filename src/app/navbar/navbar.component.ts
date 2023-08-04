@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../shared/product.service';
 import { products } from '../data-type';
+import { faCartShopping,faHeart, faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +11,11 @@ import { products } from '../data-type';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  // navbar icons
+  cart= faCartShopping
+  heart= faHeart
+  search= faSearch
+  // 
 
   constructor (private route: Router, private _product: ProductService) {}
 
